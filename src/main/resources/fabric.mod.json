@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "order-up",
+  "version": "${version}",
+  "name": "Order Up",
+  "description": "A Minecraft mod that adds a food ordering and delivery system for various humanoids in exchange for materials.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/order-up/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.github.mozirilla.client.OrderUpClient"
+    ],
+    "main": [
+      "org.github.mozirilla.OrderUp"
+    ]
+  },
+  "mixins": [
+    "order-up.mixins.json",
+    {
+      "config": "order-up.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

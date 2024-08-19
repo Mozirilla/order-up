@@ -1,0 +1,53 @@
+# Java-specific
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+logs/
+
+# Maven / Gradle
+.mvn/
+.gradle/
+build/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+*.jfm
+
+# VS Code
+.vscode/
+
+# Fabric / Minecraft Development
+run/
+cache/
+.libs/
+config/
+
+# NeoForge / Forge
+forge/
+
+# Miscellaneous
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*~ 
+
+# OS-specific
+Thumbs.db
+*.bak
+*.orig
+*.rej
+
+# Ignore compiled blockbench models and backups
+*.bbmodel.bak
+
+# Ignore environment-specific files
+.env
